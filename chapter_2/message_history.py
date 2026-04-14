@@ -15,9 +15,9 @@ client = OpenAI(api_key=api_key)
 # Example function to query ChatGPT
 def ask_chatgpt(messages):
     response = client.chat.completions.create(
-        model="gpt-4-1106-preview",
+        model="gpt-5.1",
         messages=messages,
-        temperature=0.7,        
+        temperature=0,        
         )     
     
     response_model = response.model_dump()

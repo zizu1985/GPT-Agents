@@ -60,12 +60,12 @@ def main():
                     print(prompt)
                     print(f"REPLY -------------------------------------------------")
                     #using OpenAI
-                    print(prompt_llm(prompt))
+                    #print(prompt_llm(prompt))
                     #using local LLM
-                    # print(prompt_llm(prompt, 
-                    #                  model="local-model", 
-                    #                  base_url="http://localhost:1234/v1",
-                    #                  api_key="not used"))
+                    print(prompt_llm(prompt, 
+                                     model="local-model", 
+                                     base_url="http://localhost:1234/v1",
+                                     api_key="not used"))
             else:
                 print("Invalid choice. Please enter a valid number.")
         except ValueError:

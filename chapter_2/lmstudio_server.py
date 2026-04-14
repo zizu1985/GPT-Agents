@@ -7,7 +7,7 @@ completion = client.chat.completions.create(
   model="local-model", # this field is currently unused
   messages=[
     {"role": "system", "content": "Always answer in rhymes."},
-    {"role": "user", "content": "Introduce yourself."}
+    {"role": "user", "content": "What is 4+4?"}
   ],
   temperature=0.7,
 )
